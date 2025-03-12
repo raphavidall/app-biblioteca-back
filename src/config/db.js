@@ -18,4 +18,4 @@ const sequelize = new Sequelize(
   }
 );
 
-module.exports = sequelize;quelize;
+module.exports = sequelize;
