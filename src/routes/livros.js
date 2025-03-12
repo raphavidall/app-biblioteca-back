@@ -1,12 +1,15 @@
 const express = require("express");
 const { postLivros, getLivros, getDetalhesLivros, putLivro, deleteLivro} = require('../controllers/livros');
+const { auth, checkRole } = require('../middlewares/auth');
 const router = express.Router();
 
+// Rotas públicas
 router.get("/listaLivros", getLivros);
 router.get("/detalhesLivro/:id_livro", getDetalhesLivros);
-router.post("/cadastraLivro", postLivros);
-router.put("/updateLivro/:id", putLivro);
-router.delete("/deleteLivro/:id", deleteLivro);
+
+// Rotas protegidas
+router.post("/cadastraLivro", auth, checkRole(['admin', 'professor']), postLivros);
+router.put("/updateLivro/:id", auth, checkRole(['admin', 'professor']), putLivro);
+router.delete("/deleteLivro/:id", auth, checkRole(['admin']), deleteLivro);
 
 module.exports = router;
-
