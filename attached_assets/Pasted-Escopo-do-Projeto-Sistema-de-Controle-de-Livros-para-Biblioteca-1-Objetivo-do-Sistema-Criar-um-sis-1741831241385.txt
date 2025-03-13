@@ -1,0 +1,47 @@
+Escopo do Projeto: Sistema de Controle de Livros para Biblioteca
+1. Objetivo do Sistema
+Criar um sistema para gerenciar empréstimos e devoluções de livros, mantendo um controle eficiente do acervo da biblioteca e do histórico dos usuários.
+2. Principais Funcionalidades e Distribuição de Tarefas
+Cada desenvolvedor será responsável por uma feature completa, garantindo a implementação do backend e frontend.
+Módulo 1: Cadastro e Gerenciamento de Livros (Italo)
+Descrição: Permitir o cadastro, edição, exclusão e listagem de livros no acervo.
+Responsável: Italo
+Funcionalidades:
+Cadastro de livro (título, autor, editora, ano, categoria, status)
+Edição e exclusão de livros
+Listagem e busca de livros (filtros por título, autor, categoria, status)
+Módulo 2: Cadastro e Gerenciamento de Usuários (Cristiano)
+Descrição: Controlar os usuários que podem pegar livros emprestados (ADMIN)
+Responsável: Cristiano
+Funcionalidades:
+Cadastro de usuários (nome, e-mail, senha, cargo do usuário [admin, estudante, professor, visitante], status [ativo, bloqueado])
+Atualização e remoção de usuários
+Listagem e busca de usuários
+Módulo 3: Empréstimos e Devoluções (Davi)
+Descrição: Gerenciar o processo de empréstimo e devolução de livros (ADMIN)
+Responsável: Davi
+Funcionalidades:
+Registrar empréstimos (usuário, livro, data de retirada, data de devolução prevista)
+Registrar devoluções e calcular multas (se houver atraso)
+Histórico de empréstimos por usuário e por livro
+Módulo 4: Controle de Atrasos e Multas (Amanda)
+Descrição: Implementar regras para calcular e gerenciar multas por devolução atrasada (ADMIN)
+Responsável: Amanda
+Funcionalidades:
+Notificação de atraso
+Cálculo de multa baseado nos dias de atraso
+Bloqueio temporário do usuário em caso de muitas pendências
+Módulo 5: Autenticação e Controle de Acesso (Rapha)
+Descrição: Criar um sistema seguro de login e controle de permissões.
+Responsável: Rapha
+Funcionalidades:
+Login e logout com autenticação segura (JWT)
+Controle de acesso para diferentes tipos de usuários (administradores, estudante, professor, visitante)
+Recuperação de senha
+Módulo 6: Dashboard e Relatórios (Samara)
+Descrição: Criar um painel de administração com dados estatísticos (ADMIN)
+Responsável: Samara
+Funcionalidades:
+Visualização de número de livros emprestados e devolvidos
+Relatórios de usuários ativos e bloqueados
+Listagem de livros mais emprestados
