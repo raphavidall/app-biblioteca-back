@@ -25,6 +25,14 @@ const Users = sequelize.define('users', {
   cargo: {
     type: DataTypes.ENUM('aluno', 'professor', 'visitante', 'admin'),
     defaultValue: 'visitante'
+  },
+  resetPasswordToken: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  resetPasswordExpires: {
+    type: DataTypes.DATE,
+    allowNull: true
   }
 }, {
   hooks: {
