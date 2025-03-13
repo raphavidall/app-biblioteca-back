@@ -1,0 +1,25 @@
+2025-03-12 18:49:54.272 UTC [7825] LOG:  starting PostgreSQL 15.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 13.2.0, 64-bit
+2025-03-12 18:49:54.273 UTC [7825] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-12 18:49:54.274 UTC [7825] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-03-12 18:49:54.276 UTC [7825] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2025-03-12 18:49:54.277 UTC [7825] LOG:  database system is shut down
+2025-03-13 01:32:14.543 UTC [702] LOG:  starting PostgreSQL 15.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 13.2.0, 64-bit
+2025-03-13 01:32:14.544 UTC [702] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-13 01:32:14.545 UTC [702] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-03-13 01:32:14.547 UTC [702] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2025-03-13 01:32:14.548 UTC [702] LOG:  database system is shut down
+2025-03-13 01:34:09.602 UTC [749] LOG:  starting PostgreSQL 15.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 13.2.0, 64-bit
+2025-03-13 01:34:09.604 UTC [749] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-13 01:34:09.604 UTC [749] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-03-13 01:34:09.610 UTC [749] LOG:  listening on Unix socket "/run/postgresql/.s.PGSQL.5432"
+2025-03-13 01:34:09.626 UTC [752] LOG:  database system was shut down at 2025-03-12 18:48:42 UTC
+2025-03-13 01:34:09.663 UTC [749] LOG:  database system is ready to accept connections
+2025-03-13 01:34:31.710 UTC [769] FATAL:  database "runner" does not exist
+2025-03-13 01:34:40.250 UTC [803] FATAL:  role "postgres" does not exist
+2025-03-13 01:35:24.019 UTC [926] FATAL:  role "postgres" does not exist
+2025-03-13 01:35:45.644 UTC [945] FATAL:  role "admin" does not exist
+2025-03-13 01:36:46.111 UTC [973] ERROR:  role "postgres" already exists
+2025-03-13 01:36:46.111 UTC [973] STATEMENT:  CREATE ROLE postgres PASSWORD 'SCRAM-SHA-256$4096:1iidKzXk9p40/BesSwpAHQ==$fJbI3fIaMVzkK4G6bHzk52+7yQeR+sdrQ/mj3PiVxuY=:BBFvhXW18aZFgdxlXhVIeEL2I17a++7ZPBjafFPTwiM=' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+2025-03-13 01:37:02.813 UTC [1007] FATAL:  database "biblioteca" does not exist
+2025-03-13 01:39:09.723 UTC [750] LOG:  checkpoint starting: time
+2025-03-13 01:40:47.947 UTC [750] LOG:  checkpoint complete: wrote 983 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.102 s, sync=0.088 s, total=98.224 s; sync files=322, longest=0.031 s, average=0.001 s; distance=4508 kB, estimate=4508 kB

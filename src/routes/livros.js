@@ -8,8 +8,8 @@ router.get("/listaLivros", getLivros);
 router.get("/detalhesLivro/:id_livro", getDetalhesLivros);
 
 // Rotas protegidas
-router.post("/cadastraLivro", auth, checkRole(['admin', 'professor']), postLivros);
-router.put("/updateLivro/:id", auth, checkRole(['admin', 'professor']), putLivro);
+router.post("/cadastraLivro", auth, checkRole(['admin']), postLivros);
+router.put("/updateLivro/:id", auth, checkRole(['admin']), putLivro);
 router.delete("/deleteLivro/:id", auth, checkRole(['admin']), deleteLivro);
 
 module.exports = router;
